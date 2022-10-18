@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1 class="centro">Seção de Leyout</h1>
+        
+        <button class="btn btn-primary">Clique aqui!</button>
+
+        <!-- Container -->
+        <div class="container">
+            <h2>Título da seção</h2>
+            <p>Conteúdo do container</p>
+            <p>Conteúdo do container</p>
+            <p>Conteúdo do container</p>
+        </div>
+
+        <!-- Container fluid -->
+        <div class="container-fluid">
+            <h2>Título da seção</h2>
+            <p>Conteúdo do container</p>
+            <p>Conteúdo do container</p>
+            <p>Conteúdo do container</p>
+        </div>
+
+        <!-- Container breakpoint -->
+        <div class="container-sm">
+            <h2>Título da seção</h2>
+            <p>Conteúdo do container</p>
+        </div>
+
+        <div class="container-md">
+            <h2>Título da seção</h2>
+            <p>Conteúdo do container</p>
+        </div>
+
+        <div class="container-lg">
+            <h2>Título da seção</h2>
+            <p>Conteúdo do container</p>
+        </div>
+
+        <!-- Grid -->
+        <h2 class="centro">Grid</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Produto A</p>
+                </div>
+                <div class="col">
+                    <p>Produto B</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Produto C</p>
+                </div>
+                <div class="col">
+                    <p>Produto D</p>
+                </div>
+                <div class="col">
+                    <p>Produto E</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tamanho das colunas -->
+        <h2 class="centro">Tamanho das colunas</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-2"></div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+
+        <!-- Limitação de colunas-->
+        <h2 class="centro">Limitação de colunas</h2>
+        <div class="container">
+            <div class="row row-cols-2">
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row row-cols-2">
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </div>
+
+        <!-- Alinhamento vertical  -->
+        <h2 class="centro">Alinhamento vertical "Align-items-end"</h2>
+        <div class="container vertical">
+            <div class="row align-items-end">
+                <div class="col-6"></div>
+                <div class="col-6"></div>
+            </div>
+        </div>
+
+        <h2 class="centro">Alinhamento vertical "align-items-center"</h2>
+        <div class="container vertical">
+            <div class="row align-items-center">
+                <div class="col-6"></div>
+                <div class="col-6"></div>
+            </div>
+        </div>
+
+        <!-- Alinhamento horizontal  -->
+        <h2 class="centro">Alinhamento horizontal "align-items-center justify-content-center"</h2>
+        <div class="container vertical">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-3"></div>
+            </div>
+        </div>
+
+        <h2 class="centro">Alinhamento horizontal "justify-content-center"</h2>
+        <div class="container vertical">
+            <div class="row justify-content-end">
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+
+        <!-- Alinhamento de item  -->
+        <h2 class="centro">Alinhamento de item "align-self-center"</h2>
+        <div class="container vertical">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-3 align-self-center"></div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+
+        <h2 class="centro">Alinhamento de item "align-self-center e align-self-end"</h2>
+        <div class="container vertical">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 align-self-center"></div>
+                <div class="col-4 align-self-end"></div>
+            </div>
+        </div>
+
+        <!-- Ordem -->
+        <h2 class="centro">Ordem</h2>
+        <div class="container vertical">
+            <div class="row">
+                <div class="col-3 order-3">3</div>
+                <div class="col-3 order-1">1</div>
+                <div class="col-3 order-4">4</div>
+                <div class="col-3 order-2">2</div>
+            </div>
+        </div>
+
+        <!-- Offset -->
+        <h2 class="centro">Offset</h2>
+        <div class="container vertical" id="offset">
+            <div class="row">
+                <div class="col-md-3 offset-md-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 offset-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 offset-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 offset-md-4"></div>
+            </div>
+        </div>
+
+    </body>
+</html>

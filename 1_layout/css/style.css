@@ -1,0 +1,113 @@
+/* XS */
+h1 {
+    color: red;
+}
+
+.centro {
+    text-align: center;
+}
+
+/* SM >= 576px */
+@media (min-width: 576px) {
+    h1 {
+       color: blue; 
+    } 
+}
+
+/* MD >= 768px */
+@media (min-width: 768px) {
+    h1 {
+       color: green; 
+    } 
+}
+
+/* LG >= 992px */
+@media (min-width: 992px) {
+    h1 {
+       color: orange; 
+    } 
+}
+
+/* XL >= 1200px */
+@media (min-width: 1200px) {
+    h1 {
+       color: yellow; 
+    } 
+}
+
+/* XXL >= 1400px */
+@media (min-width: 1400px) {
+    h1 {
+       color: teal; 
+    } 
+}
+
+.container {
+    background-color: #999;
+}
+
+.container-fluid {
+    background-color: #888;
+}
+
+/* container breakpoint*/
+
+.container-sm {
+    margin-bottom: 30px;
+    border: 2px solid blue;
+}
+
+.container-md {
+    margin-bottom: 30px;
+    border: 2px solid crimson;
+}
+
+.container-lg {
+    margin-bottom: 30px;
+    border: 2px solid chocolate;
+}
+
+/* Grid */
+.container {
+    border: 5px dotted blue;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+.row {
+    border: 5px solid purple;
+    height: 100px;
+    padding: 10px;
+    margin: 0;
+}
+
+.col, .col-3, .col-4, .col-2, .col-6 {
+    border: 2px dashed red;
+    height: 100%;
+    margin: 0;
+}
+
+/* Alinhamento vertical  */
+
+.vertical {
+    height: 250px;
+    border-color: coral;
+}
+
+.vertical .row {
+    height: 100%;
+}
+
+.col-6, .col-3, .col-4 {
+    height: 50px;
+}
+
+/* offset */
+#offset {
+    height: auto;
+}
+
+#offset .col-md-3 {
+    height: 50px;
+    border: 2px solid red;
+}
