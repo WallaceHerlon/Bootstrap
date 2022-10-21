@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Criando form -->
+    <div class="col-4 m-4">
+
+        <h2>Formulário de Registro</h2>
+        <form>
+            <div class="mb-4">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Insira seu e-mail">
+                <div id="emailHelp" class="form-text">Não compartilhamos seu endereço de e-mail</div>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="form-label">Senha:</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Digite a sua senha">
+            </div>
+            <!-- <input type="submit" class="btn btn-primary" value="Cadastrar"> -->
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+
+    </div>
+    
+        <!-- form desabilitado -->
+        <div class="col-4 m-4">
+
+            <fieldset disabled>
+                <h2>Formulário desabilitado</h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="email1" name="email" aria-describedby="emailHelp" placeholder="Insira seu e-mail">
+                        <div id="emailHelp" class="form-text">Não compartilhamos seu endereço de e-mail</div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Senha:</label>
+                        <input type="password" class="form-control" id="password1" name="password" placeholder="Digite a sua senha">
+                    </div>
+                    <!-- <input type="submit" class="btn btn-primary" value="Cadastrar"> -->
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+            </fieldset>
+    
+        </div>
+        
+        <!-- form control -->
+        <div class="m-4">
+
+            <h2>Crie seu Post</h2>
+            <form>
+                <div class="col-4 mb-4">
+                    <label for="title" class="form-label">Título do Post:</label>
+                    <input type="text" class="form-control" id="title3" placeholder="Digite seu título">
+                </div>
+                <div class="col-4 mb-4">
+                    <label for="content" class="form-label">Conteúdo:</label>
+                    <textarea class="form-control" placeholder="Digite o conteúdo do post..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Eviar</button>
+            </form>
+
+        </div>
+
+            <!-- Read only -->
+    <div class="col-4 m-4">
+
+        <h2>Formulário de Read Only</h2>
+        <form>
+            <div class="mb-4">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control" id="email4" name="email5" placeholder="Insira seu e-mail" readonly value="wallace@hotmail.com">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control-plaintext" id="email5" name="email5" placeholder="Insira seu e-mail" value="wallace@gmail.com" readonly>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+
+    </div>
+
+    <!-- input de arquivos -->
+    <div class="col-4 m-4">
+
+        <h2>Teste de input de arquivo</h2>
+        <form>
+            <div class="mb-4">
+                <label for="foto" class="form-label">Apenas um arquivo:</label>
+                <input type="file" class="form-control" id="foto">
+            </div>
+            <div class="mb-4">
+                <label for="foto" class="form-label">Mútiplos arquivo:</label>
+                <input type="file" class="form-control" id="foto" multiple>
+            </div>
+            <div class="mb-4">
+                <label for="foto2" class="form-label">Apenas um arquivo:</label>
+                <input type="file" class="form-control" id="foto2" disabled>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- Outros elementos -->
+    <div class="col-4 m-4">
+        <h2>Outros inputs</h2>
+        <form>
+            <!-- Data list -->
+            <div class="mb-4">
+                <label for="cidades" class="form-label">Selecione uma cidade:</label>
+                <input class="form-control" list="datalistOptions" id="cidades" placeholder="Busque a sua cidade...">
+                <datalist id="datalistOptions">
+                    <option value="São Paulo">
+                    <option value="Rio de Janeiro">
+                    <option value="Paraná">
+                    <option value="Maceio">
+                    <option value="Santa Catarina">
+                </datalist>
+            </div>
+            <!-- Cor -->
+            <div class="mb-4">
+                <label for="cor" class="form-label">Selecione a cor:</label>
+                <input type="color" class="form-control form-control-color" value="#000" title="Escolha uma cor">
+            </div>
+        </form>
+    </div>
+
+
+
+
+</body>
+</html>
